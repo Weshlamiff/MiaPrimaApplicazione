@@ -32,8 +32,9 @@ public class Register extends AppCompatActivity {
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Utente utente = new Utente(editTextNome.getText().toString(), editTextCognome.getText().toString(),editTextUser.getText().toString(), editTextPassword.getText().toString());
                 //uso del log
-                Log.d("Registrazione", editTextNome.getText().toString() + " " + editTextCognome.getText().toString());
+                Log.d("Registrazione", utente.getNome() + " " + utente.getCognome() +  " " + utente.getUsername() + " " + utente.getPassword());
                 Toast.makeText(Register.this, editTextNome.getText().toString() + " " + editTextCognome.getText().toString() + " registrato correttamente", Toast.LENGTH_LONG).show();
             }
         });
