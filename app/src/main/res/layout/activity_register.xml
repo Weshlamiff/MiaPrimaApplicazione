@@ -48,8 +48,8 @@
         android:id="@+id/calendar"
         android:layout_width="378dp"
         android:layout_height="322dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="152dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="156dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
         app:layout_constraintEnd_toEndOf="parent" />
 
