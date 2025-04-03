@@ -25,9 +25,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Username"
-        app:layout_constraintBottom_toTopOf="@+id/txt_Username"
-        app:layout_constraintStart_toStartOf="@+id/txt_Username" />
+        android:text="Email"
+        app:layout_constraintBottom_toTopOf="@+id/txt_Email"
+        app:layout_constraintStart_toStartOf="@+id/txt_Email" />
 
     <EditText
         android:id="@+id/txt_Password"
@@ -51,7 +51,7 @@
         app:layout_constraintStart_toStartOf="@+id/txt_Password" />
 
     <EditText
-        android:id="@+id/txt_Username"
+        android:id="@+id/txt_Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"

@@ -25,7 +25,7 @@ public class Register extends AppCompatActivity {
         //Collegamento con elementi grafici
         EditText editTextNome = findViewById(R.id.txt_nome);
         EditText editTextCognome = findViewById(R.id.txt_cognome);
-        CalendarView calendar = findViewById(R.id.calendar);
+        //CalendarView calendar = findViewById(R.id.calendar);
         EditText editTextUser = findViewById(R.id.txt_user);
         EditText editTextPassword = findViewById(R.id.txt_password);
         Button btnRegister = findViewById(R.id.btn_register);

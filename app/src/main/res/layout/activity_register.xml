@@ -9,13 +9,10 @@
         android:id="@+id/txt_nome"
         android:layout_width="165dp"
         android:layout_height="46dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/calendar"
-        app:layout_constraintStart_toStartOf="@+id/calendar"
-        app:layout_constraintTop_toTopOf="@+id/txt_cognome" />
+        app:layout_constraintTop_toTopOf="@+id/txt_cognome"
+        tools:layout_editor_absoluteX="22dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -29,12 +26,10 @@
         android:id="@+id/txt_cognome"
         android:layout_width="166dp"
         android:layout_height="46dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="44dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/calendar"
-        app:layout_constraintEnd_toEndOf="@+id/calendar" />
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="56dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -44,32 +39,22 @@
         app:layout_constraintBottom_toTopOf="@+id/txt_cognome"
         app:layout_constraintStart_toStartOf="@+id/txt_cognome" />
 
-    <CalendarView
-        android:id="@+id/calendar"
-        android:layout_width="378dp"
-        android:layout_height="322dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="156dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:text="Data di Nascita"
-        app:layout_constraintBottom_toTopOf="@+id/calendar"
-        app:layout_constraintStart_toStartOf="@+id/calendar" />
-
     <EditText
         android:id="@+id/txt_password"
         android:layout_width="174dp"
         android:layout_height="44dp"
-        android:layout_marginEnd="5dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/calendar"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="173dp"
+        android:layout_height="21dp"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/txt_password"
+        tools:layout_editor_absoluteX="216dp" />
 
     <TextView
         android:id="@+id/textView15"
@@ -83,21 +68,10 @@
         android:id="@+id/txt_user"
         android:layout_width="174dp"
         android:layout_height="44dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="68dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintStart_toStartOf="@+id/calendar"
-        app:layout_constraintTop_toBottomOf="@+id/calendar" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="173dp"
-        android:layout_height="21dp"
-        android:text="Password"
-        app:layout_constraintBottom_toTopOf="@+id/txt_password"
-        app:layout_constraintEnd_toEndOf="@+id/txt_password"
-        app:layout_constraintStart_toStartOf="@+id/txt_password" />
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="536dp" />
 
     <Button
         android:id="@+id/btn_register"
@@ -109,5 +83,25 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/txt_password"
         app:layout_constraintStart_toStartOf="@+id/txt_user" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/txt_nome"
+        app:layout_constraintStart_toStartOf="@+id/txt_nome"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="170dp"
+        android:layout_height="18dp"
+        android:text="Data di Nascita"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        tools:layout_editor_absoluteY="137dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
